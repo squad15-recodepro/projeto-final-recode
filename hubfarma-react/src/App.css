@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(assets/fundo.png);
+}
+
+.color-blue {
+  color: #64b9fc;
+}
+
+.color-green {
+  color: #399c8a;
+}
+
+#cadastro-layout {
+  background: white;
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "infos form";
+  grid-template-columns: 2fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.cadastro-title {
+  grid-area: title;
+  text-align: center;
+  color: rgb(77, 77, 77);
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+  margin-bottom: 20px;
+}
+
+.cadastro-title h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.cadastro-infos {
+  grid-area: infos;
+  padding: 5px;
+  color: rgb(77, 77, 77);
+}
+
+.cadastro-infos h2 {
+  font-size: 1.3rem;
+  padding: 0 5px;
+}
+
+.cadastro-infos img {
+  max-width: 450px;
+}
+
+.cadastro-infos h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.item-lista-cadastro {
+  padding: 15px 0;
+}
+
+.item-lista-cadastro ul {
+  list-style-type: disc;
+}
+
+ul {
+  padding-left: 1px !important;
+}
+
+.cadastro-form {
+  grid-area: form;
+  padding: 20px 40px;
+  background: #354c5e;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 1px 1px 10px #354c5e;
+}
+
+.cadastro-form h3 {
+  font-size: 1.2rem;
+}
+
+.cadastro-form-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #354c5e !important;
+  border: none !important;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.modal-body,
+.modal-title {
+  color: white;
+}
+
+.modal-footer {
+  border-top: none !important;
+}
+
+.campos-form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.campos-form input,
+.campos-form textarea,
+.campos-form select {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+#btn-cadastrar {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  #cadastro-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 30px 10px;
+  }
+
+  .cadastro-title {
+    padding-bottom: 10px;
+  }
+
+  .cadastro-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .cadastro-form {
+    padding: 15px 30px;
+  }
+
+  .cadastro-infos h2 {
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+
+  .cadastro-infos img {
+    max-width: 365px;
+}
+}

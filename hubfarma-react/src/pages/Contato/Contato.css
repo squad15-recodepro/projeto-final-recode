@@ -1,0 +1,126 @@
+#contato {
+  display: grid;
+  grid-template-areas:
+    "contato-title contato-title"
+    "contato-form contato-infos"
+    "contato-form contato-redes";
+  max-width: 1200px;
+  background: white;
+  margin: 0 auto;
+  padding: 0 10px 60px 10px;
+}
+
+.contato-title {
+  grid-area: contato-title;
+}
+
+.contato-title h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px 0;
+  color: #474747;
+}
+
+.contato-form {
+  grid-area: contato-form;
+  background: #354c5e;
+  padding: 30px 30px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  max-width: 70%;
+  margin: 20px auto;
+  box-shadow: 1px 1px 20px black;
+}
+
+.contato-form h2 {
+  font-size: 1.3rem;
+}
+
+.btn-container {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.contato-infos {
+  grid-area: contato-infos;
+  text-align: right;
+  background: #354c5e;
+  padding: 30px 30px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  max-width: fit-content;
+  height: fit-content;
+  margin: 20px auto;
+  box-shadow: 1px 1px 20px black;
+}
+
+.contato-infos h2 {
+  font-size: 1.3rem;
+}
+
+.contato-infos p,
+.contato-redes p {
+  margin: 0;
+}
+
+.contato-redes {
+  grid-area: contato-redes;
+  text-align: right;
+  background: #354c5e;
+  padding: 30px 30px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  width: 70%;
+  height: fit-content;
+  margin: 20px auto;
+  box-shadow: 1px 1px 20px black;
+}
+
+.contato-redes h2 {
+  font-size: 1.3rem;
+}
+
+.contato-redes p a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.contato-redes-rows p:first-child a:hover {
+  color: #f041bb;
+  transition: 0.3s ease-in;
+}
+
+.contato-redes-rows p:nth-child(2) a:hover {
+  color: #4178f0;
+  transition: 0.3s ease-in;
+}
+
+.contato-redes-rows p:nth-child(3) a:hover {
+  color: #ee4a4a;
+  transition: 0.3s ease-in;
+}
+
+@media (max-width: 767.98px) {
+  #contato {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .contato-title h1 {
+    font-size: 1.4rem;
+    margin: 0;
+    padding-top: 5px;
+  }
+
+  .contato-form {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .contato-redes {
+    margin-top: 0;
+  }
+}

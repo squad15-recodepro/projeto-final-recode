@@ -1,0 +1,78 @@
+footer {
+  background: #3f5d74;
+}
+
+#footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+#footer-content h2 {
+  font-size: 1.1rem;
+  color: #27d1b3;
+  font-weight: bold;
+}
+
+#footer-content a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease-in;
+  padding: 5px 0;
+}
+
+#footer-content a:hover {
+  color: #64b9fc;
+}
+
+#empresa {
+  display: flex;
+  flex-direction: column;
+}
+
+#cadastro {
+  display: flex;
+  flex-direction: column;
+}
+
+#redes {
+  max-width: 20%;
+}
+
+#redes i {
+  color: white;
+  margin: 0 5px;
+  font-size: 1.3rem;
+}
+
+#redes i:hover {
+  color: #64b9fc;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+#rights {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+#rights a {
+  text-decoration: none;
+  color: #64b9fc;
+}
+
+@media (max-width: 767.98px) {
+  #footer-content {
+    padding: 20px 5px;
+  }
+
+  #empresa,
+  #cadastro,
+  #redes {
+    max-width: 30%;
+  }
+}
